@@ -20,14 +20,7 @@ def fight(ft:int,st:int,teams:list):
     first_team = [i.strip().split(",") for i in teams[:ft]]
     st_att = 0
     second_team = [i.strip().split(",") for i in teams[st:]]
-
-def attack(pt,dt,teams):
-
-    teams = teams.strip().split(",")
-    ft_att = 0
-    first_team = [i.strip().split(" ") for i in teams[:pt]]
-    second_team = [i.strip().split(" ") for i in teams[pt:]]
-    st_att = 0
+   
     for i in first_team:
         for y in second_team:
             if len(i) == 1:
